@@ -256,12 +256,40 @@ class CheckoutManager {
             }
             if (data && data.qr_code_base64 && data.qr_code) {
                 this.showPixModal(data.qr_code, total, email, data.qr_code_base64);
+            } else if (data && (data.init_point || data.sandbox_init_point)) {
+                this.showMercadoPagoLinkModal(data.init_point || data.sandbox_init_point);
             } else {
                 alert('Erro ao gerar pagamento PIX: QR Code não recebido.\n' + JSON.stringify(data));
             }
         } catch (err) {
             alert('Erro ao gerar pagamento PIX: ' + err.message);
         }
+    }
+    showMercadoPagoLinkModal(link) {
+        const modal = document.createElement('div');
+        modal.className = 'modal-overlay';
+        modal.style.position = 'fixed';
+        modal.style.top = '0';
+        modal.style.left = '0';
+        modal.style.width = '100vw';
+        modal.style.height = '100vh';
+        modal.style.background = 'rgba(0,0,0,0.7)';
+        modal.style.display = 'flex';
+        modal.style.alignItems = 'center';
+        modal.style.justifyContent = 'center';
+        modal.style.zIndex = '9999';
+        modal.innerHTML = `
+            <div class="modal-content" style="background: white; border-radius: 15px; padding: 30px; max-width: 400px; width: 100%; box-shadow: 0 8px 40px rgba(0,0,0,0.2); text-align: center;">
+                <h3>Pagamento via Mercado Pago</h3>
+                <p>Seu banco ou conta Mercado Pago não está habilitado para PIX instantâneo.<br>Você pode finalizar a compra pelo site do Mercado Pago:</p>
+                <a href="${link}" target="_blank" style="display:inline-block;margin:20px 0;padding:15px 30px;background:#009ee3;color:#fff;border-radius:8px;font-size:1.1rem;text-decoration:none;font-weight:bold;">Pagar com Mercado Pago</a>
+                <div class="modal-actions" style="margin-top: 20px;">
+                    <button class="btn btn-secondary" onclick="checkoutManager.closeModal()">Cancelar</button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+        this.pixModal = modal;
     }
 
     processCreditCardPayment(email) {
