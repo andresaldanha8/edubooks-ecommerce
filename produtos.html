@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebooks - EduBooks Kids</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><a href="index.html"><i class="fas fa-book-reader"></i> EduBooks Kids</a></h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html" class="active">Ebooks</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="carrinho.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="login.html" class="user-icon">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Nossos Ebooks Educativos</h1>
+            <p>Descubra materiais educativos incríveis para crianças</p>
+        </div>
+    </section>
+
+    <!-- Filters and Search -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-row">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Pesquisar produtos...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-controls">
+                    <select id="category-filter">
+                        <option value="">Todas as Categorias</option>
+                        <option value="infantis">Livros Infantis</option>
+                        <option value="colorir">Livros para Colorir</option>
+                        <option value="escolares">Atividades Escolares</option>
+                        <option value="igreja">Atividades para Igreja</option>
+                    </select>
+                    <select id="price-filter">
+                        <option value="">Todos os Preços</option>
+                        <option value="0-100">R$ 0 - R$ 100</option>
+                        <option value="100-500">R$ 100 - R$ 500</option>
+                        <option value="500-1000">R$ 500 - R$ 1000</option>
+                        <option value="1000+">Acima de R$ 1000</option>
+                    </select>
+                    <select id="sort-filter">
+                        <option value="name">Ordenar por Nome</option>
+                        <option value="price-low">Menor Preço</option>
+                        <option value="price-high">Maior Preço</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Produtos serão carregados aqui via JavaScript -->
+            </div>
+            <div class="loading" id="loading">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Carregando ebooks...</p>
+            </div>
+            <div class="no-results" id="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <p>Nenhum ebook encontrado</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <section class="pagination-section">
+        <div class="container">
+            <div class="pagination" id="pagination">
+                <!-- Paginação será gerada via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre Nós</h3>
+                    <p>Oferecemos ebooks educativos de qualidade para o desenvolvimento infantil, com materiais para escola e igreja.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Ebooks</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> (93) 9 9913-5643</p>
+                    <p><i class="fas fa-envelope"></i> contato@edubookskids.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/bhconvitesvtx?igsh=Z3NybTY0dW4ydWx2" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/bhconvitesvtx?igsh=Z3NybTY0dW4ydWl2" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/bhconvitesvtx?igsh=Z3NybTY0dW4ydWl2" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 EduBooks Kids. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/temp-images.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

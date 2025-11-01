@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - EduBooks Kids</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><a href="index.html"><i class="fas fa-book-reader"></i> EduBooks Kids</a></h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkout Page -->
+    <section class="checkout-page">
+        <div class="container">
+            <h1><i class="fas fa-credit-card"></i> Finalizar Compra</h1>
+            
+            <div class="checkout-content">
+                <!-- Product Summary -->
+                <div class="product-summary">
+                    <h2>Resumo do Pedido</h2>
+                    <div class="checkout-item" id="checkout-summary">
+                        <!-- Produto será carregado via JavaScript -->
+                    </div>
+                    <div class="total-section">
+                        <div class="total-line">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">R$ 0,00</span>
+                        </div>
+                        <div class="total-line total-final">
+                            <span>Total:</span>
+                            <span id="total">R$ 0,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Form -->
+                <div class="payment-section">
+                    <h2>Informações de Pagamento</h2>
+                    <form id="checkout-form">
+                        <div class="form-group">
+                            <label for="customer-email">Email para receber o ebook:</label>
+                            <input type="email" id="customer-email" name="email" required 
+                                   placeholder="seu@email.com">
+                            <small>O PDF será enviado para este email</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customer-name">Nome completo:</label>
+                            <input type="text" id="customer-name" name="name" required 
+                                   placeholder="Seu nome completo">
+                        </div>
+
+                        <div class="payment-methods">
+                            <h3>Escolha a forma de pagamento:</h3>
+                            
+                            <div class="payment-option">
+                                <input type="radio" id="pix" name="payment-method" value="pix" checked>
+                                <label for="pix" class="payment-label">
+                                    <i class="fas fa-qrcode"></i>
+                                    <div>
+                                        <strong>PIX</strong>
+                                        <small>Pagamento instantâneo - Receba em 5 minutos</small>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="payment-option">
+                                <input type="radio" id="card" name="payment-method" value="card">
+                                <label for="card" class="payment-label">
+                                    <i class="fas fa-credit-card"></i>
+                                    <div>
+                                        <strong>Cartão de Crédito</strong>
+                                        <small>Visa, Mastercard, Elo - Parcele em até 3x</small>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="security-info">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <strong>Compra 100% Segura</strong>
+                                <p>Seus dados estão protegidos com criptografia SSL</p>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-complete-purchase">
+                            <i class="fas fa-lock"></i>
+                            FINALIZAR COMPRA SEGURA
+                        </button>
+                        <a href="produtos.html" class="btn btn-secondary" style="margin-top: 15px; display: inline-block; width: 100%; text-align: center;">
+                            <i class="fas fa-arrow-left"></i> Cancelar e Voltar para Loja
+                        </a>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Trust Elements -->
+            <div class="trust-elements">
+                <div class="trust-item">
+                    <i class="fas fa-rocket"></i>
+                    <strong>Entrega Imediata</strong>
+                    <p>Receba por email em até 5 minutos</p>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <strong>Garantia de 7 dias</strong>
+                    <p>Não gostou? Devolvemos 100%</p>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-users"></i>
+                    <strong>+1.000 clientes</strong>
+                    <p>Satisfeitos com nossos ebooks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre Nós</h3>
+                    <p>Oferecemos ebooks educativos de qualidade para o desenvolvimento infantil, com materiais para escola e igreja.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Ebooks</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> (93) 9 9913-5643</p>
+                    <p><i class="fas fa-envelope"></i> contato@edubookskids.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/bhconvitesvtx?igsh=Z3NybTY0dW4ydWx2" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/bhconvitesvtx?igsh=Z3NybTY0dW4ydWl2" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/bhconvitesvtx?igsh=Z3NybTY0dW4ydWl2" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 EduBooks Kids. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

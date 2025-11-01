@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - EduBooks Kids</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><a href="index.html"><i class="fas fa-book-reader"></i> EduBooks Kids</a></h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Ebooks</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="carrinho.html" class="cart-icon active">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="login.html" class="user-icon">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Carrinho de Compras</h1>
+            <p>Revise seus itens antes de finalizar</p>
+        </div>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-content">
+                <!-- Empty Cart -->
+                <div class="empty-cart" id="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>Seu carrinho está vazio</h3>
+                    <p>Adicione alguns ebooks ao seu carrinho para continuar</p>
+                    <a href="produtos.html" class="btn btn-primary">Ver Ebooks</a>
+                </div>
+
+                <!-- Cart Items -->
+                <div class="cart-items" id="cart-items" style="display: none;">
+                    <div class="cart-header">
+                        <h2>Itens no Carrinho</h2>
+                        <button class="btn btn-secondary" id="clear-cart">
+                            <i class="fas fa-trash"></i> Limpar Carrinho
+                        </button>
+                    </div>
+                    
+                    <div class="cart-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Ebook</th>
+                                    <th>Preço</th>
+                                    <th>Quantidade</th>
+                                    <th>Total</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-table-body">
+                                <!-- Itens do carrinho serão inseridos aqui -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Cart Summary -->
+                    <div class="cart-summary">
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">R$ 0,00</span>
+                        </div>
+                        <!-- Frete removido: produto digital -->
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span id="total">R$ 15,00</span>
+                        </div>
+                    </div>
+
+                    <!-- Calculadora de frete removida: produto digital -->
+
+                    <!-- Checkout -->
+                    <div class="checkout-section">
+                        <a href="produtos.html" class="btn btn-secondary">Ver Mais Ebooks</a>
+                        <button class="btn btn-primary" id="checkout-btn">
+                            <i class="fas fa-download"></i> Finalizar e Baixar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre Nós</h3>
+                    <p>Oferecemos ebooks educativos de qualidade para o desenvolvimento infantil, com materiais para escola e igreja.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Ebooks</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> (93) 9 9913-5643</p>
+                    <p><i class="fas fa-envelope"></i> contato@edubookskids.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/bhconvitesvtx?igsh=Z3NybTY0dW4ydWx2" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/bhconvitesvtx?igsh=Z3NybTY0dW4ydWl2" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/bhconvitesvtx?igsh=Z3NybTY0dW4ydWl2" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 EduBooks Kids. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

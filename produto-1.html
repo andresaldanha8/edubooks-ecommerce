@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo com Alegria - EduBooks Kids</title>
+    <meta name="description" content="Ebook educativo que torna o aprendizado uma experiência divertida para crianças de 4-8 anos. Download imediato por email.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><a href="index.html"><i class="fas fa-book-reader"></i> EduBooks Kids</a></h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="carrinho.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="login.html" class="user-icon">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Page -->
+    <section class="product-page">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="index.html">Início</a> > 
+                <a href="produtos.html">Produtos</a> > 
+                <span>Aprendendo com Alegria</span>
+            </nav>
+
+            <div class="product-detail">
+                <!-- Product Image -->
+                <div class="product-image-large">
+                    <img src="images/img01.png" alt="Aprendendo com Alegria" id="main-product-image">
+                    <div class="product-badge">
+                        <i class="fas fa-download"></i> Download Imediato
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info-large">
+                    <h1>Aprendendo com Alegria</h1>
+                    <div class="product-category">
+                        <i class="fas fa-graduation-cap"></i> Ebooks Escolares
+                    </div>
+                    
+                    <div class="product-price-large">
+                        R$ 19,90
+                        <span class="price-description">Pagamento único</span>
+                    </div>
+
+                    <div class="product-description">
+                        <h3>📚 Sobre este Ebook:</h3>
+                        <p>Um ebook educativo que torna o aprendizado uma experiência divertida e envolvente para crianças. Desenvolvido especialmente para estimular o interesse pelos estudos através de atividades interativas e exercícios práticos.</p>
+                        
+                        <h4>✨ O que você vai receber:</h4>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Atividades interativas</li>
+                            <li><i class="fas fa-check"></i> Aprendizado lúdico</li>
+                            <li><i class="fas fa-check"></i> Desenvolvimento cognitivo</li>
+                            <li><i class="fas fa-check"></i> Exercícios práticos</li>
+                        </ul>
+
+                        <div class="product-specs">
+                            <div class="spec">
+                                <i class="fas fa-child"></i>
+                                <strong>Idade:</strong> 4-8 anos
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-file-pdf"></i>
+                                <strong>Formato:</strong> PDF
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-envelope"></i>
+                                <strong>Entrega:</strong> Por email
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Purchase Section -->
+                    <div class="purchase-section">
+                        <button class="btn-buy-now" onclick="buyNow(1)">
+                            <i class="fas fa-credit-card"></i>
+                            COMPRAR AGORA - R$ 19,90
+                        </button>
+                        
+                        <div class="delivery-info">
+                            <i class="fas fa-rocket"></i>
+                            <strong>Entrega Imediata:</strong> Receba o PDF no seu email em até 5 minutos após o pagamento
+                        </div>
+
+                        <div class="guarantee">
+                            <i class="fas fa-shield-alt"></i>
+                            <strong>Garantia de 7 dias:</strong> Não gostou? Devolvemos 100% do seu dinheiro
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="additional-info">
+                <div class="info-card">
+                    <i class="fas fa-download"></i>
+                    <h3>Download Fácil</h3>
+                    <p>Após o pagamento, você receberá o link de download diretamente no seu email</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-print"></i>
+                    <h3>Pode Imprimir</h3>
+                    <p>Arquivo em alta qualidade, perfeito para imprimir quantas vezes quiser</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Qualquer Dispositivo</h3>
+                    <p>Funciona em celular, tablet, computador. Compatível com qualquer PDF reader</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre Nós</h3>
+                    <p>Oferecemos ebooks educativos de qualidade para o desenvolvimento infantil, com materiais para escola e igreja.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> (93) 9 9913-5643</p>
+                    <p><i class="fas fa-envelope"></i> contato@edubookskids.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/bhconvitesvtx?igsh=Z3NybTY0dW4ydWx2" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/bhconvitesvtx?igsh=Z3NybTY0dW4ydWx2" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/bhconvitesvtx?igsh=Z3NybTY0dW4ydWx2" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 EduBooks Kids. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Função de compra direta
+        function buyNow(productId) {
+            // Adiciona ao carrinho
+            addToCart(productId);
+            
+            // Redireciona para checkout simplificado
+            window.location.href = 'checkout.html?direct=' + productId;
+        }
+    </script>
+</body>
+</html>

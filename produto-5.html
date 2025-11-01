@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVRO DE ATIVIDADES CRISTÃS - EduBooks Kids</title>
+    <meta name="description" content="Ebook LIVRO DE ATIVIDADES CRISTÃS - Atividades educativas com valores cristãos para crianças. PDF digital por apenas R$ 16,99.">
+    
+    <!-- SEO -->
+    <meta name="keywords" content="atividades cristãs, ebook religioso, educação cristã, valores bíblicos, crianças">
+    <meta name="author" content="EduBooks Kids">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="LIVRO DE ATIVIDADES CRISTÃS - EduBooks Kids">
+    <meta property="og:description" content="Atividades educativas com valores cristãos para crianças">
+    <meta property="og:image" content="img/produto-5.png">
+    <meta property="og:type" content="product">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h2><i class="fas fa-book-open"></i> EduBooks Kids</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li>
+                        <a href="carrinho.html" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Details -->
+    <main class="product-page">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="index.html">Início</a>
+                <span>/</span>
+                <a href="produtos.html">Produtos</a>
+                <span>/</span>
+                <span>LIVRO DE ATIVIDADES CRISTÃS</span>
+            </nav>
+
+            <div class="product-details">
+                <div class="product-image">
+                    <img src="img/produto-5.png" alt="LIVRO DE ATIVIDADES CRISTÃS" id="main-image">
+                    <div class="product-badge">
+                        <i class="fas fa-cross"></i>
+                        <span>Cristão</span>
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h1>LIVRO DE ATIVIDADES CRISTÃS</h1>
+                    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-text">(112 avaliações)</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="old-price">R$ 32,90</span>
+                        <span class="current-price">R$ 16,99</span>
+                        <span class="discount">48% OFF</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>✝️ <strong>Um tesouro de atividades cristãs para toda a família!</strong></p>
+                        <p>O <em>LIVRO DE ATIVIDADES CRISTÃS</em> é uma coleção completa de exercícios, jogos e desafios que ensinam valores cristãos de forma divertida. Ideal para pais, professores e líderes de ministério infantil.</p>
+                        
+                        <div class="highlight-box">
+                            <h4>🙏 O que está incluído:</h4>
+                            <ul>
+                                <li>Histórias bíblicas interativas</li>
+                                <li>Jogos educativos com base cristã</li>
+                                <li>Atividades de colorir e desenhar</li>
+                                <li>Quebra-cabeças e desafios</li>
+                                <li>Versículos para memorizar</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-specs">
+                        <h4>📋 Especificações:</h4>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <i class="fas fa-file-pdf"></i>
+                                <div>
+                                    <strong>Formato:</strong>
+                                    <span>PDF Digital</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-images"></i>
+                                <div>
+                                    <strong>Páginas:</strong>
+                                    <span>68 páginas</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-child"></i>
+                                <div>
+                                    <strong>Idade:</strong>
+                                    <span>4 a 12 anos</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-download"></i>
+                                <div>
+                                    <strong>Entrega:</strong>
+                                    <span>Imediata por email</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="purchase-section">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus" onclick="changeQuantity(-1)">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10">
+                            <button class="qty-btn plus" onclick="changeQuantity(1)">+</button>
+                        </div>
+
+                        <button class="btn-buy-now" onclick="buyNow(5)">
+                            <i class="fas fa-bolt"></i>
+                            COMPRAR AGORA
+                        </button>
+
+                        <button class="btn-add-cart" onclick="addToCart(5)">
+                            <i class="fas fa-cart-plus"></i>
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </div>
+
+                    <div class="guarantees">
+                        <div class="guarantee-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <strong>Garantia de 7 dias</strong>
+                                <span>100% do seu dinheiro de volta</span>
+                            </div>
+                        </div>
+                        <div class="guarantee-item">
+                            <i class="fas fa-lock"></i>
+                            <div>
+                                <strong>Pagamento Seguro</strong>
+                                <span>Site protegido e criptografado</span>
+                            </div>
+                        </div>
+                        <div class="guarantee-item">
+                            <i class="fas fa-headset"></i>
+                            <div>
+                                <strong>Suporte Especializado</strong>
+                                <span>Atendimento via WhatsApp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Content -->
+            <div class="product-additional">
+                <div class="content-preview">
+                    <h3>📖 Conteúdo do Ebook</h3>
+                    <div class="preview-grid">
+                        <div class="preview-item">
+                            <h4>Seção 1: Histórias Bíblicas</h4>
+                            <p>Atividades baseadas nas principais histórias da Bíblia</p>
+                        </div>
+                        <div class="preview-item">
+                            <h4>Seção 2: Valores Cristãos</h4>
+                            <p>Exercícios que ensinam amor, perdão e bondade</p>
+                        </div>
+                        <div class="preview-item">
+                            <h4>Seção 3: Arte Cristã</h4>
+                            <p>Páginas para colorir com temas bíblicos</p>
+                        </div>
+                        <div class="preview-item">
+                            <h4>Seção 4: Desafios e Jogos</h4>
+                            <p>Quebra-cabeças e caça-palavras bíblicos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefits-section">
+                    <h3>🎯 Benefícios Espirituais e Educacionais</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <i class="fas fa-pray"></i>
+                            <h4>Crescimento Espiritual</h4>
+                            <p>Fortalece a relação da criança com Deus</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-heart"></i>
+                            <h4>Formação de Caráter</h4>
+                            <p>Desenvolve valores cristãos sólidos</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-users"></i>
+                            <h4>Atividade em Família</h4>
+                            <p>Momentos especiais de aprendizado conjunto</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-church"></i>
+                            <h4>Uso Ministerial</h4>
+                            <p>Perfeito para escola dominical e ministério infantil</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="testimonials">
+                <h3>💬 O que os líderes estão dizendo</h3>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Uso este livro no ministério infantil da nossa igreja. As crianças se divertem muito e aprendem os valores cristãos!"</p>
+                        <div class="author">
+                            <strong>Tia Sarah</strong>
+                            <span>Líder do Ministério Infantil</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Material incrível! Meus filhos adoraram as atividades. É educativo e fortalece nossa fé em família."</p>
+                        <div class="author">
+                            <strong>Pastor Roberto</strong>
+                            <span>Pai de 3 filhos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div class="related-products">
+                <h3>🔗 Produtos Relacionados</h3>
+                <div class="products-grid">
+                    <div class="product-card" onclick="window.location.href='produto-3.html'">
+                        <img src="img/produto-3.png" alt="O Amor de DEUS - START">
+                        <h4>O Amor de DEUS - START</h4>
+                        <p class="price">R$ 14,99</p>
+                    </div>
+                    <div class="product-card" onclick="window.location.href='produto-2.html'">
+                        <img src="img/produto-2.png" alt="Alfabeto Bíblico Infantil">
+                        <h4>Alfabeto Bíblico Infantil</h4>
+                        <p class="price">R$ 12,99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-book-open"></i> EduBooks Kids</h3>
+                    <p>Transformando o aprendizado em aventura através de ebooks educativos cristãos de qualidade.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/bhconvitesvtx" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5593991355643" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (93) 99135-5643</li>
+                        <li><i class="fas fa-envelope"></i> contato@edubooks.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Santarém, PA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduBooks Kids. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Specific functions for this product
+        function changeQuantity(delta) {
+            const qtyInput = document.getElementById('quantity');
+            let currentQty = parseInt(qtyInput.value);
+            const newQty = Math.max(1, Math.min(10, currentQty + delta));
+            qtyInput.value = newQty;
+        }
+
+        function buyNow(productId) {
+            const quantity = parseInt(document.getElementById('quantity').value);
+            window.location.href = `checkout.html?produto=${productId}&quantidade=${quantity}`;
+        }
+
+        function addToCart(productId) {
+            const quantity = parseInt(document.getElementById('quantity').value);
+            
+            if (typeof window.cartManager !== 'undefined') {
+                window.cartManager.addItem(productId, quantity);
+                
+                const btn = document.querySelector('.btn-add-cart');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i> ADICIONADO!';
+                btn.style.background = '#28a745';
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.background = '';
+                }, 2000);
+            } else {
+                alert('Produto adicionado ao carrinho!');
+            }
+        }
+    </script>
+</body>
+</html>

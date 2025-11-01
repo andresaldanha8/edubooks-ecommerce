@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOMAR - EduBooks Kids</title>
+    <meta name="description" content="Ebook SOMAR - Aprenda adição de forma divertida e educativa. PDF digital por apenas R$ 10,99.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h2><i class="fas fa-book-open"></i> EduBooks Kids</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li>
+                        <a href="carrinho.html" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Details -->
+    <main class="product-page">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html">Início</a>
+                <span>/</span>
+                <a href="produtos.html">Produtos</a>
+                <span>/</span>
+                <span>SOMAR</span>
+            </nav>
+
+            <div class="product-details">
+                <div class="product-image">
+                    <img src="img/produto-7.png" alt="SOMAR" id="main-image">
+                    <div class="product-badge">
+                        <i class="fas fa-plus"></i>
+                        <span>Adição</span>
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h1>SOMAR</h1>
+                    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-text">(68 avaliações)</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="old-price">R$ 19,90</span>
+                        <span class="current-price">R$ 10,99</span>
+                        <span class="discount">45% OFF</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>➕ <strong>Aprenda a somar de forma divertida!</strong></p>
+                        <p>O ebook <em>SOMAR</em> apresenta a adição através de exercícios progressivos e ilustrações coloridas. Ideal para crianças que estão começando a aprender matemática.</p>
+                        
+                        <div class="highlight-box">
+                            <h4>🎯 O que está incluído:</h4>
+                            <ul>
+                                <li>Conceitos básicos de adição</li>
+                                <li>Exercícios com objetos visuais</li>
+                                <li>Somas até 20</li>
+                                <li>Atividades práticas e lúdicas</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-specs">
+                        <h4>📋 Especificações:</h4>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <i class="fas fa-file-pdf"></i>
+                                <div>
+                                    <strong>Formato:</strong>
+                                    <span>PDF Digital</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-images"></i>
+                                <div>
+                                    <strong>Páginas:</strong>
+                                    <span>35 páginas</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-child"></i>
+                                <div>
+                                    <strong>Idade:</strong>
+                                    <span>5 a 8 anos</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-download"></i>
+                                <div>
+                                    <strong>Entrega:</strong>
+                                    <span>Imediata por email</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="purchase-section">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus" onclick="changeQuantity(-1)">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10">
+                            <button class="qty-btn plus" onclick="changeQuantity(1)">+</button>
+                        </div>
+
+                        <button class="btn-buy-now" onclick="buyNow(7)">
+                            <i class="fas fa-bolt"></i>
+                            COMPRAR AGORA
+                        </button>
+
+                        <button class="btn-add-cart" onclick="addToCart(7)">
+                            <i class="fas fa-cart-plus"></i>
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </div>
+
+                    <div class="guarantees">
+                        <div class="guarantee-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <strong>Garantia de 7 dias</strong>
+                                <span>100% do seu dinheiro de volta</span>
+                            </div>
+                        </div>
+                        <div class="guarantee-item">
+                            <i class="fas fa-lock"></i>
+                            <div>
+                                <strong>Pagamento Seguro</strong>
+                                <span>Site protegido e criptografado</span>
+                            </div>
+                        </div>
+                        <div class="guarantee-item">
+                            <i class="fas fa-headset"></i>
+                            <div>
+                                <strong>Suporte Especializado</strong>
+                                <span>Atendimento via WhatsApp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-book-open"></i> EduBooks Kids</h3>
+                    <p>Transformando o aprendizado em aventura através de ebooks educativos cristãos de qualidade.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/bhconvitesvtx" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5593991355643" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (93) 99135-5643</li>
+                        <li><i class="fas fa-envelope"></i> contato@edubooks.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Santarém, PA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduBooks Kids. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        function changeQuantity(delta) {
+            const qtyInput = document.getElementById('quantity');
+            let currentQty = parseInt(qtyInput.value);
+            const newQty = Math.max(1, Math.min(10, currentQty + delta));
+            qtyInput.value = newQty;
+        }
+
+        function buyNow(productId) {
+            const quantity = parseInt(document.getElementById('quantity').value);
+            window.location.href = `checkout.html?produto=${productId}&quantidade=${quantity}`;
+        }
+
+        function addToCart(productId) {
+            const quantity = parseInt(document.getElementById('quantity').value);
+            
+            if (typeof window.cartManager !== 'undefined') {
+                window.cartManager.addItem(productId, quantity);
+                
+                const btn = document.querySelector('.btn-add-cart');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i> ADICIONADO!';
+                btn.style.background = '#28a745';
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.background = '';
+                }, 2000);
+            } else {
+                alert('Produto adicionado ao carrinho!');
+            }
+        }
+    </script>
+</body>
+</html>
