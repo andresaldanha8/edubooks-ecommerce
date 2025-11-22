@@ -152,16 +152,16 @@ function getEbookById(id) {
         {
             id: 1,
             name: "Aprendendo com Alegria",
-            price: 19.90,
+            price: 1.00,
             image: "images/img01.png",
-            fallbackEmoji: "�",
+            fallbackEmoji: "📖",
             ageRange: "4-10 anos",
             downloadFormats: ["PDF"]
         },
         {
             id: 2,
             name: "Alfabeto Bíblico",
-            price: 22.90,
+            price: 1.00,
             image: "images/img02.png",
             fallbackEmoji: "🔤",
             ageRange: "3-8 anos",
@@ -170,7 +170,7 @@ function getEbookById(id) {
         {
             id: 3,
             name: "Alfabeto Bíblico Infantil",
-            price: 18.90,
+            price: 1.00,
             image: "images/img03.png",
             fallbackEmoji: "🌈",
             ageRange: "2-6 anos",
@@ -179,7 +179,7 @@ function getEbookById(id) {
         {
             id: 4,
             name: "Complete os Nomes dos Animais",
-            price: 15.90,
+            price: 1.00,
             image: "images/img04.png",
             fallbackEmoji: "🐼",
             ageRange: "4-8 anos",
